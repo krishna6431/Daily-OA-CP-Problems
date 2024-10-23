@@ -1,0 +1,10 @@
+You are given a sequence A1, A2, ..., AN consisting of integers. You can perform the following operation on the sequence any number of times (including possibly 0 times):
+Select any continuous segment Al, Al+1, ..., Ar and sort it in non-descending order, while keeping other elements of the sequence unchanged.
+The cost of performing this operation is given by:
+cost = max(Al, Al+1, ..., Ar) - min(Al, Al+1, ..., Ar).
+Example:
+If the sequence is A = [3, 4, 1, 5, 1, 9], and you apply the operation on the segment A2 ... A5, the resulting sequence will be:
+[3, 1, 1, 4, 5, 9].
+The cost of this operation is:
+5 - 1 = 4.
+Your task is to determine the minimum total cost of operations required to make the entire sequence A sorted in non-descending order. This means that for all 2 ≤ i ≤ N, the following condition must hold:
